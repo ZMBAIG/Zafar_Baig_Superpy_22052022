@@ -57,12 +57,12 @@ def stock_inventory(args):
 
     table = Table(title=f"\nSUPERMARKET SUPERPY INVENTORY REPORT ({day})", show_lines=True)
 
-    table.add_column("Product ID",          justify ="right", style = "bold blue on yellow")
-    table.add_column("Product Name",        style   ="bold red on white")
-    table.add_column("Purchase Price €",    justify ="right",    style = "bold red on blue")
-    table.add_column("Amount",              justify ="right",    style  ="bold black on white")
-    table.add_column("Purchase Date",       justify ="center",   style  ="bold white on green")
-    table.add_column("Expiration Date",     justify ="center",   style  ="bold white on red")
+    table.add_column("Product ID",          justify ="right",    style   ="bold blue on yellow")
+    table.add_column("Product Name",                             style   ="bold red on white")
+    table.add_column("Purchase Price €",    justify ="right",    style   ="bold red on blue")
+    table.add_column("Amount",              justify ="right",    style   ="bold black on white")
+    table.add_column("Purchase Date",       justify ="center",   style   ="bold white on green")
+    table.add_column("Expiration Date",     justify ="center",   style   ="bold white on red")
 
     for item in products:
         table.add_row(
