@@ -3,7 +3,7 @@ console = Console()
 from rich import print
 from datetime import date, timedelta, datetime
 
-# realtime-now
+# Setting and advancing the date that the application perceives as 'today';
 def to_get_current_date(args):
     today                   =   date.today()
     date_today              =   datetime.strftime(today, "%Y-%m-%d")
